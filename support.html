@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      a {
+        text-decoration: none;
+        color: #FFF;
+        font-family: Georgia;
+        font-size: 1.5vw;
+      }
+      .f1 {
+        position: absolute;
+        margin-top: 2vw;
+        margin-left: 10vw;
+      }
+      .f2 {
+        position: absolute;
+        margin-top: 20vw;
+        margin-left: 10vw;
+      }
+
+        .b {
+        display: inline-flex;
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #FFF;
+        background-color: black;
+      }
+      .b:hover  {
+        animation: ch-color 0.1s forwards;
+      }
+      @keyframes ch-color {
+       from {
+         background-color: black;
+        }
+        to {
+          background-color: white;
+        }
+      }
+
+      .but1 {
+        margin-top: 1vw;
+        margin-left: 1vw;
+      }
+      
+      .but1_1 {
+        background-color: white;
+        margin-top: 1vw;
+        margin-left: 1vw;
+      }
+      .but1_1 > a {
+        text-decoration: none;
+        color: black;
+        font-family: Georgia;
+        font-size: 1.5vw;
+      }
+      .but2 {
+        margin-top: 1vw;
+        margin-left: 43vw;
+      }
+      .but3 {
+        margin-top: 1vw;
+        margin-left: 1vw;
+      }
+      .but4 {
+        margin-top: 1vw;
+        margin-left: 1vw;
+      }
+
+      .but5 {
+        margin-top: 36vw;
+        margin-left: 80vw;
+      }
+
+      
+      label {
+        font-size: 1.5vw;
+        color: #FFF;
+      }
+      p {
+        font-size: 2vw;
+        color: #FFF;
+      }
+
+      input {
+        margin: 1vw;
+      }
+
+      .down {
+        position: absolute;
+        margin-left: 87vw;
+        margin-top: 9vw;
+        background-image: url('./img/hse.png');
+        background-size: cover;
+        width: 10vw;
+        height: 4vw;
+      }
+      .down2 {
+        position: absolute;
+        margin-left: 1vw;
+        margin-top: 9vw;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="b but1">
+            <a href="mcqueen.html">главная</a>
+        </div>
+        <div class="b but1_1">
+          <a href="">поддержка</a>
+        </div>
+        <div class="b but2">
+            <a href="history.html">история</a>
+        </div>
+        <div class="b but3">
+            <a href="https://www.alexandermcqueen.com/en-gb">сайт дизайнера</a>
+        </div>
+        <div class="b but4">
+            <a href="index.html">доп разделы</a>
+        </div>
+    </nav>
+
+    <form class="f1">
+        <p>Проблема:</p>
+        <div>
+            <input type="checkbox" id="scales" name="scales" />
+            <label for="scales">Сбор личной информации</label>
+        </div>
+        <div>
+            <input type="checkbox" id="scales" name="scales" />
+            <label for="scales">Нежелание сервиса работать</label>
+        </div>
+        <div>
+            <input type="checkbox" id="scales" name="scales" />
+            <label for="scales">Вы просто мне не нравитесь</label>
+        </div>
+    </form>
+    
+    <form class="f2">
+        <p>Решить в:</p>
+        <div>
+            <input type="radio" id="contactChoice1" name="contact" value="email" />
+            <label for="contactChoice1">срочном порядке</label>
+        </div>
+        <div>
+            <input type="radio" id="contactChoice1" name="contact" value="email" />
+            <label for="contactChoice1">близжайшее время</label>
+        </div>
+        <div>
+            <input type="radio" id="contactChoice1" name="contact" value="email" />
+            <label for="contactChoice1">близжайший месяц</label>
+        </div>
+    </form>
+    <div class="b but5">
+        <a href="support1.html">далее</a>
+    </div>
+    <div>
+            <div class="down"></div>
+            <div class="down2">Б22ДЗ08 <br> Зеленкова Александра</div>
+    </div>
+</body>
+</html>

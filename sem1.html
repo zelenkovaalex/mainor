@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Первое дз</title>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style media="screen">
+      a, p, h1 {
+        font-family: Roboto;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: black;
+      }
+      h1 {
+        font-weight: 500;
+      }
+      .o {
+        margin-left: 1.5vw;
+        margin-top: 1.5vw;
+      }
+      .surname {
+        margin-top: -20vw;
+        margin-left: 14vw;
+      }
+      .name {
+        margin-top: 0vw;
+        margin-left: 14vw;
+      }
+      .surname1 {
+        margin-top: -20vw;
+        margin-left: 14vw;
+      }
+      .name1 {
+        margin-top: 0vw;
+        margin-left: 14vw;
+      }
+      .birthday {
+        margin-top: 1vw;
+        margin-left: 14vw;
+      }
+      .for_click_name {
+        margin-top: 5vw;
+        margin-left: 1vw;
+      }
+      .for_click_nome {
+        margin-top: 1vw;
+        margin-left: 1vw;
+      }
+      #me {
+        margin-top: -5vw;
+        margin-left: 2vw;
+        height: 12vw;
+        width: 11vw;
+      }
+      .none {
+        display: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+          $(".for_click_name").click(function () {
+            $(".name").addClass("none");
+            $(".name1").removeClass("none");
+          });
+          $(".for_click_nome").click(function () {
+            $(".surname").addClass("none");
+            $(".surname1").removeClass("none");
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <div class='o'><a href="index.html">На главную</a></div>
+
+    <img src="img/passport.jpg" alt="arrow">
+    <p class='surname'>Зеленкова</p>
+    <p class='surname1 none'>Zelenkova</p>
+    <p class='name'>Александра</p>
+    <p class='name1 none'>Aleksandra</p>
+    <p class='birthday'>28.03.2004</p>
+    <img id='me' src="img/photo.jpg" alt="me">
+    <h1 class='for_click_name'>Изменить имя</h1>
+    <h1 class='for_click_nome'>Изменить фамилию</h1>
+  </body>
+</html>

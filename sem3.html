@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: black;
+      } 
+      .o {
+        margin-left: 1.5vw;
+        margin-top: 1.5vw;
+      }
+        form {
+        margin-top: 2vw;
+        display: grid;
+        flex-direction: row;
+        }
+        input {
+        margin-left: 1vw;
+        display:grid;
+        flex-direction: row;
+        }
+        .sel1 {
+        display:grid;
+        flex-direction: column;
+        }
+        tr {
+        margin-top: 0.7vw;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        }
+        td {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center; 
+        font-size: 1 vw; 
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        legend, h2 {
+        font-size: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class='o'><a href="index.html">На главную</a></div>
+
+    <h2>Анкета посетителя ресторана</h2>
+
+    <form>
+        <fieldset>
+            <legend>Контактная информация</legend>
+                <table>
+                    <tr>
+                        <td>Имя</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Дата посещения</td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <div>
+                <table>
+                    <tr>
+                        <td>Возраст</td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Любимая кухня</td>
+                        <td>
+                           <div class="sel1">
+                            <select name="" id="">
+                                <option value="kuh">выбрать кухню</option>
+                                <option value="rus">русская</option>
+                                <option value="gr">грузинская</option>
+                                <option value="ar">армянская</option>
+                            </select>
+                           </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Какие блюда вы бы хотели видеть в меню?</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+            <div>
+                <table>
+                        <thead><td>Почему именно мы?</td></thead>
+                    <tr>
+                        <td>
+                            <input type="radio" id="contactChoice1" name="contact" value="email" />
+                            <label for="contactChoice1">нравится ваша кухня</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="contactChoice1" name="contact" value="email" />
+                            <label for="contactChoice1">ваш повар - мой друг</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="contactChoice1" name="contact" value="email" />
+                            <label for="contactChoice1">у вас удобно учиться</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <thead><td>Рекомендавали вы бы наше заведение?</td></thead>
+                        <td>
+                            <div>
+                                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                                <label for="contactChoice1">да</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                                <label for="contactChoice1">нет</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Потраченная сумма</legend>
+            <div>
+                <table>
+                    <td>
+                        <thead>
+                            <td>Сколько вы оставили у нас?</td>
+                        </thead>
+                        <td>
+                            <div>
+                                <input type="radio" name="" id=""><label for="">больше 1000р</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio" name="" id=""><label for="">меньше 1000р</label>
+                            </div>
+                        </td>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+
+    <input type="button" value="отправить">
+
+</body>
+</html>
