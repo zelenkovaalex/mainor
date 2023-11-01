@@ -66,7 +66,7 @@
       .but2 {
         background-color: white;
         margin-top: 1vw;
-        margin-left: 53vw;
+        margin-left: 49vw;
       }
       .but3 {
         margin-top: 1vw;
@@ -113,6 +113,7 @@
         font-family: Georgia;
       }
       .photo img {
+        cursor: pointer;
         background-image: url('img/2.png');
         background-position: center center;
         background-size: cover;
@@ -121,7 +122,8 @@
         margin-top: 5vw;
         margin-left: 1vw;
       }
-      .photo2 img {
+      .photo22 img {
+        cursor: pointer;
         background-image: url('img/10.png');
         background-position: center center;
         background-size: cover;
@@ -131,6 +133,7 @@
         margin-left: 51vw;
       }
       .photo3 img {
+        cursor: pointer;
         width: 96vw;
         height: 35vw;
         margin-top: 5vw;
@@ -150,6 +153,39 @@
         color: white;
         font-family: Georgia;
         width: 41vw;
+      }
+
+      .none {
+        display: none;;
+      }
+      .pp {
+        position: absolute;
+        z-index: 2;
+        background-size: cover;
+        width: 57vw;
+        height: 48vw;
+        margin-left: 24vw;
+        background-image: url('img/13.png');
+      }
+      .pp1 {
+        background-image: url('img/12.png');
+        position: absolute;
+        z-index: 2;
+        background-size: cover;
+        width: 57vw;
+        height: 48vw;
+        margin-left: 24vw;
+        margin-top: 37vw;
+      }
+      .pp2 {
+        background-image: url('img/14.png');  
+        position: absolute;
+        z-index: 2;
+        background-size: cover;
+        width: 57vw;
+        height: 48vw;
+        margin-left: 24vw;   
+        margin-top: 79vw; 
       }
 
       .down {
@@ -175,8 +211,31 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script type="text/javascript">
+    <script>
+      $(document).ready(function () {
 
+        $(".photo").click(function () {
+          $(".photos1").removeClass("none");
+        });
+        $(".photos1").click(function () {
+          $(".photos1").addClass("none");
+        });
+
+        $(".photo22").click(function () {
+          $(".photos2").removeClass("none");
+        });
+        $(".photos2").click(function () {
+          $(".photos2").addClass("none");
+        });
+
+        $(".photo3").click(function () {
+          $(".photos3").removeClass("none");
+        });
+        $(".photos3").click(function () {
+          $(".photos3").addClass("none");
+        });
+      
+      })
     </script>
 </head>
 <body>
@@ -195,9 +254,19 @@
             </div>
         </nav>
 
+        <div class="photos1 none">
+          <div class="pp"></div>
+        </div>
+        <div class="photos2 none">
+          <div class="pp1"></div>
+        </div>
+        <div class="photos3 none">
+          <div class="pp2"></div>
+        </div>
+
         <div>
           <div class="photo">
-            <a href="photo2.html"><img class="photo2" src="img/2.png" alt=""></a>
+            <img class="photo2" src="img/2.png" alt="">
           </div>
           <div class="pod">фото Александра Ли Маккуина</div>
         </div>
@@ -224,15 +293,15 @@
         </div>
 
         <div>
-          <div class="photo2">
-            <a href="photo1.html"><img class="photo2" src="img/10.png" alt=""></a>
+          <div class="photo22">
+            <img class="photo2" src="img/10.png" alt="">
           </div>
           <div class="pod2">"Voss"/Paris Fashion Week Ready-to-Wear AW 09</div>
         </div>
 
         <div>
           <div class="photo3">
-            <a href="photo.html"><img src="img/11.png" alt=""></a>
+            <img src="img/11.png" alt="">
           </div>
           <div class="pod3">Alexander McQueen Paris Fashion Week SS2008</div>
         </div>

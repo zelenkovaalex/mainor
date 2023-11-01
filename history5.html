@@ -60,7 +60,7 @@
       .but2 {
         background-color: #FFF;
         margin-top: 1vw;
-        margin-left: 53vw;
+        margin-left: 49vw;
       }
       .but2 > a {
         text-decoration: none;
@@ -135,6 +135,28 @@
         height: 13vw;
       }
 
+      .fs1 {
+        background-image: url('img/15.png');
+        background-size: cover;
+        position: absolute;
+        z-index: 2;
+        width: 35vw;
+        height: 26vw;
+        margin-left: 29vw;
+      }
+      .fs2 {
+        background-image: url('img/16.png');
+        background-size: cover;
+        position: absolute;
+        z-index: 2;
+        width: 35vw;
+        height: 26vw;
+        margin-left: 29vw;
+        margin-top: 15vw;
+      }
+      .none {
+        display: none;
+      }
 
       .down {
         position: absolute;
@@ -159,8 +181,24 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script type="text/javascript">
+    <script>
+            $(document).ready(function () {
 
+        $(".p1").click(function () {
+          $(".photoss1").removeClass("none");
+        });
+        $(".photoss1").click(function () {
+          $(".photoss1").addClass("none");
+        });
+
+        $(".p2").click(function () {
+          $(".photoss2").removeClass("none");
+        });
+        $(".photoss2").click(function () {
+          $(".photoss2").addClass("none");
+        });
+      
+      })
     </script>
 </head>
 <body>
@@ -178,6 +216,13 @@
                 <a href="index.html">доп разделы</a>
             </div>
         </nav>
+
+        <div class="photoss1 none">
+          <div class="fs1"></div>
+        </div>
+        <div class="photoss2 none">
+          <div class="fs2"></div>
+        </div>
 
         <table>
           <thead>

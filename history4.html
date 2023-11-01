@@ -60,7 +60,7 @@
       .but2 {
         background-color: #FFF;
         margin-top: 1vw;
-        margin-left: 53vw;
+        margin-left: 49vw;
       }
       .but2 > a {
         text-decoration: none;
@@ -94,6 +94,19 @@
         border-spacing: 0px;
         border-color: white;
       }
+      table:hover  {
+        animation: ch-img 0.1s forwards;
+      }
+      @keyframes ch-img {
+       from {
+         background-color: black;
+        }
+        to {
+          background-image: url('img/1aa.png');
+          background-size: cover;
+        }
+      }
+
       td {
         display: inline-flex;
         justify-content: center;
@@ -102,7 +115,6 @@
         color: white;
         font-family: Georgia;
         border: 1px solid #FFF;
-        background-color: black;
         height: 4vw;
       }
       td:first-child {
@@ -154,6 +166,8 @@
                 <a href="index.html">доп разделы</a>
             </div>
         </nav>
+
+        </div>
 
         <table>
           <thead>
