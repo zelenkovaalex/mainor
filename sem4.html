@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: black;
+    }
+    img {
+        width: 15vw;
+        height: 10vw;
+    }
+    tr {
+        margin-top: 0.7vw;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    td {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        font-size: 1 vw; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    legend, h1 {
+        font-size: 2vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    .first {
+        display: flex;
+        flex-direction: row;
+    }
+    .button {
+        cursor: pointer;
+    }
+
+
+    #cat {
+        width: 33vw;
+        height: 20vw;
+    }
+
+    .none {
+        display: none;
+    }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#first").click(function () {
+            $(".first").addClass("none");
+            $(".second").removeClass("none");
+          });
+          $("#second").click(function () {
+            $(".first").addClass("none");
+            $(".third").removeClass("none");
+          });
+          $("#third").click(function () {
+            $(".first").addClass("none");
+            $(".fourth").removeClass("none");
+          });
+
+
+          $(".p1").click(function () {
+            $(".second").addClass("none");
+            $(".first").removeClass("none");
+          });
+          $(".f1").click(function () {
+            $(".second").addClass("none");
+            $(".third").removeClass("none");
+          });
+
+          $(".p2").click(function () {
+            $(".third").addClass("none");
+            $(".second").removeClass("none");
+          });
+          $(".f2").click(function () {
+            $(".third").addClass("none");
+            $(".fourth").removeClass("none");
+          });
+
+          $(".p3").click(function () {
+            $(".fourth").addClass("none");
+            $(".third").removeClass("none");
+          });
+        });
+    </script>
+</head>
+<body>
+    <div class='o'><a href="index.html">На главную</a></div>
+
+    <h1>Картинки котов</h1>
+
+    <div class="first">
+         <table class="f">
+            <td>
+                <thead>
+                    <td>Кот №1</td>
+                </thead>
+                <td>
+                    <div>
+                        <img src="https://w.forfun.com/fetch/02/0261dfae0e4904627653a2d6d5de1a4e.jpeg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p id="first" class="button">Посмотреть</p>
+                    </div>
+                </td>
+        </table>
+         <table class="s">
+            <td>
+                <thead>
+                    <td>Кот №2</td>
+                </thead>
+                <td>
+                    <div>
+                        <img src="https://fikiwiki.com/uploads/posts/2022-02/1644991795_6-fikiwiki-com-p-prikolnie-kartinki-pro-kotov-6.jpg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p id="second" class="button">Посмотреть</p>
+                    </div>
+                </td>
+        </table>
+         <table class="t">
+            <td>
+                <thead>
+                    <td>Кот №3</td>
+                </thead>
+                <td>
+                    <div>
+                        <img src="https://avatars.mds.yandex.net/get-mpic/7552302/img_id8748678853141864235.jpeg/orig" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p id="third" class="button">Посмотреть</p>
+                    </div>
+                </td>
+        </table>
+    </div>
+
+    <div class="second none">
+        <table class="f">
+            <td>
+                <thead>
+                    <td>Кот №1</td>
+                </thead>
+            <td>
+                <div>
+                    <img id="cat" src="https://w.forfun.com/fetch/02/0261dfae0e4904627653a2d6d5de1a4e.jpeg" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="p1">
+                    <p class="button">Назад</p>
+                </div>
+            </td>
+            <td>
+                <div class="f1">
+                    <p class="button">Вперёд</p>
+                </div>
+            </td>
+        </table>
+    </div>
+
+    <div class="third none">
+        <table class="f">
+            <td>
+                <thead>
+                    <td>Кот №2</td>
+                </thead>
+            <td>
+                <div>
+                    <img id="cat" src="https://fikiwiki.com/uploads/posts/2022-02/1644991795_6-fikiwiki-com-p-prikolnie-kartinki-pro-kotov-6.jpg" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="p2">
+                    <p class="button">Назад</p>
+                </div>
+                <td>
+                <div class="f2">
+                    <p class="button">Вперёд</p>
+                </div>
+                </td>
+            </td>
+        </table>
+    </div>
+
+    <div class="fourth none">
+        <table class="f">
+            <td>
+                <thead>
+                    <td>Кот №3</td>
+                </thead>
+            <td>
+                <div>
+                    <img id="cat" src="https://avatars.mds.yandex.net/get-mpic/7552302/img_id8748678853141864235.jpeg/orig" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="p3">
+                    <p class="button">Назад</p>
+                </div>
+            </td>
+        </table>
+    </div>
+
+</body>
+</html>

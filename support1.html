@@ -130,6 +130,32 @@ input {
   width: 84vw;
   color: #fff;
 }
+#send {
+  cursor: pointer;
+  height: 3.5vw;
+  border: 1px solid #fff;
+  background-color: black;
+  background-size: cover;
+  border-radius: 4px;
+  width: 10vw;
+  color: #fff;
+
+  width: 10vw;
+        height: 4vw;
+        margin-top: 3vw;
+        margin-left: 42vw;
+}
+#send:hover  {
+  animation: ch-color 0.1s forwards;
+}
+@keyframes ch-color {
+ from {
+   background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
 
 /* buttom */
     .down {
@@ -179,7 +205,9 @@ input {
             </div>
         </nav>
 
+    
     <div class="bigF">
+      <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank"></form>
         <div class="name">
             <input type="text" name="" value="" placeholder="имя">
         </div>
@@ -195,13 +223,13 @@ input {
         <div class="promocode">
             <input type="password" name="" value="" placeholder="промокод">
         </div>
+
+          <input id="send" type="submit" value="Отправить">
+        
     </div> 
     
-    <div class="b but5">
-      <input id="send" type="submit" value="Отправить">
-    </div>
-    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank"></form>
-    
+
+
     <div>
             <div class="down"></div>
             <div class="down2">Б22ДЗ08 <br> Зеленкова Александра</div>

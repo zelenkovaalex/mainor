@@ -127,6 +127,27 @@ input {
   width: 84vw;
   color: #fff;
 }
+#send {
+  cursor: pointer;
+  height: 3.5vw;
+  border: 1px solid #fff;
+  background-color: black;
+  background-size: cover;
+  border-radius: 4px;
+  width: 10vw;
+  color: #fff;
+}
+#send:hover  {
+  animation: ch-color 0.1s forwards;
+}
+@keyframes ch-color {
+ from {
+   background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
       
       .down {
         position: absolute;
@@ -189,9 +210,9 @@ input {
               </div>
             </div>
             
-            <div class="b but5">
-              <a href="https://www.google.com/search">подписаться</a>
-            </div>
+        <div class="but5">
+          <input id="send" type="submit" value="Отправить">
+        </div>
 
             <div class="b but6">
                 <a href="history5.html">ещё страница?</a>
