@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задачка</title>
+    <style>
+        a, p, li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: black;
+        }
+    </style>
 </head>
 <body>
+    <div class='o'><a href="index.html">На главную</a></div>
+    
     <p>Даны вещественные положительные числа a, b, c, d. Выясните, может ли прямоугольник со сторонами a, b уместиться внутри
     прямоугольника со сторонами c, d так, чтобы каждая сторона внутреннего прямоугольника была
     параллельна или перпендикулярна стороне внешнего прямоугольника.</p>
@@ -16,13 +26,35 @@
             <li>a: <input id="a" name="a" type="number"></li>
             <li>b: <input id="b" name="b" type="number"></li>
             <li>c: <input id="c" name="c" type="number"></li>
-            <li>d: <input id="c" name="c" type="number"></li>
+            <li>d: <input id="d" name="d" type="number"></li>
         </ul>
         <div>
             <input id="send" type="button" value="Отпределить">
         </div>
     </form>
     <p id="result">Результаты вычислений: </p>
-    <script src="./javascript/function.js"></script>
+
 </body>
+<script>
+    const elementA = document.getElementById("a");
+    const elementB = document.getElementById("b");
+    const elementC = document.getElementById("c");
+    const elementD = document.getElementById("d");
+
+    const elementVerify = document.getElementById("send");
+    elementVerify.addEventListener('click', function () {
+        let a = parseInt(elementA.innerText);
+        let b = parseInt(elementB.innerText);
+        let c = parseInt(elementC.innerText);
+        let d = parseInt(elementD.innerText);
+
+        if (((a <= c) && (b <= d)) || ((a <= d) && (b <= c))) {
+            console.log('Да, может');
+            document.getElementById("result").innerText = 'Да, может';
+        } else {
+            console.log('Нет, не может');
+            document.getElementById("result").innerText = 'Нет, не может';
+        }
+    });
+</script>
 </html>

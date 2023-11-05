@@ -134,8 +134,13 @@ input {
   background-color: black;
   background-size: cover;
   border-radius: 4px;
-  width: 10vw;
   color: #fff;
+  padding: 1vw 1.5vw;
+
+  width: 10vw;
+  height: 4vw;
+  margin-top: 3vw;
+  margin-left: 42vw;
 }
 #send:hover  {
   animation: ch-color 0.1s forwards;
@@ -193,6 +198,7 @@ input {
         </nav>
 
             <div class="bigF">
+            <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
               <div class="name">
                 <input type="text" name="" value="" placeholder="имя">
               </div>
@@ -208,11 +214,12 @@ input {
               <div class="promocode">
                 <input type="date" name="" value="" placeholder="дата подписки">
               </div>
-            </div>
             
-        <div class="but5">
-          <input id="send" type="submit" value="Отправить">
-        </div>
+            
+
+          <input id="send" name="submit" type="Submit" value="Отправить">
+          </form>
+          </div>
 
             <div class="b but6">
                 <a href="history5.html">ещё страница?</a>
