@@ -1,99 +1,99 @@
 [
   {
     "id": "1",
-    "title": "ysi",
+    "title": "Усы",
     "vendor_code": "111",
-    "description": "",
+    "description": "Переводное тату",
     "price": 150,
     "img": "https://i.pinimg.com/564x/8e/10/e3/8e10e3c8c211a4e9e52d1a8ff0f6eba9.jpg"
   },
   {
     "id": "2",
-    "title": "phone",
+    "title": "Iphone ",
     "vendor_code": "222",
-    "description": "Описание 2",
+    "description": "Раритетная модель",
     "price": 90000,
     "img": "https://i.pinimg.com/564x/8b/3e/9e/8b3e9ef3fa9dfbe01cd39628919470a9.jpg"
   },
   {
     "id": "3",
-    "title": "tv show",
+    "title": "Набор сериалов",
     "vendor_code": "333",
-    "description": "Описание 3",
+    "description": "Рандомные диски",
     "price": 1000,
     "img": "https://i.pinimg.com/564x/0c/46/5b/0c465b3f0a7bfa6c06c21c87a1ffb03d.jpg"
   },
   {
     "id": "4",
-    "title": "mist",
+    "title": "Body mist",
     "vendor_code": "444e",
-    "description": "Описание 4",
+    "description": "Боди мист от PINK",
     "price": 1500,
     "img": "https://i.pinimg.com/564x/2c/44/4f/2c444f12421dcc22be6c347d9993765a.jpg"
   }
   ,
   {
     "id": "5",
-    "title": "braslets",
+    "title": "Резиновые браслеты",
     "vendor_code": "4445e",
-    "description": "Описание 6",
+    "description": "Набор браслетов 10шт",
     "price": 500,
     "img": "https://i.pinimg.com/564x/26/8b/8e/268b8e1f9aa9f291b30215071720d8a7.jpg"
   },
   {
     "id": "6",
-    "title": "clothes",
+    "title": "Футболка / майка",
     "vendor_code": "4446e",
-    "description": "Описание 6",
+    "description": "Одежда Forever 21",
     "price": 1500,
     "img": "https://i.pinimg.com/564x/5e/77/01/5e770188880ab856fc406325bc0b2136.jpg"
   },
   {
     "id": "7",
-    "title": "clothes",
+    "title": "Космо легинсы",
     "vendor_code": "4447e",
-    "description": "Описание 7",
+    "description": "Космические легенсы 2014",
     "price": 2000,
     "img": "https://i.pinimg.com/564x/bf/e2/8f/bfe28f0f1726d485871e6fc71563d469.jpg"
   },
   {
     "id": "8",
-    "title": "nian cat",
+    "title": "Ньян кет",
     "vendor_code": "4448e",
-    "description": "Описание 8",
+    "description": "Легендарный кот (стикер)",
     "price": 300,
     "img": "https://i.pinimg.com/564x/15/96/d0/1596d007b447282bb73822f04afa555c.jpg"
   },
   {
     "id": "9",
-    "title": "cardigan",
+    "title": "Растянутый кардиган",
     "vendor_code": "444e",
-    "description": "Описание 9",
+    "description": "Прямиком из 2к14",
     "price": 1600,
     "img": "https://i.pinimg.com/564x/30/7b/a8/307ba800d80b0ab9bf422f5ac717971d.jpg"
   }
   ,
   {
     "id": "10",
-    "title": "kepka",
+    "title": "Кепка",
     "vendor_code": "44410e",
-    "description": "Описание 10",
+    "description": "Легендарная кепка",
     "price": 2300,
     "img": "https://i.pinimg.com/564x/de/30/85/de3085f30c17f4c74103184fcc74c57d.jpg"
   },
   {
     "id": "11",
-    "title": "longboard",
+    "title": "Лонгборд",
     "vendor_code": "44411e",
-    "description": "Описание 1",
+    "description": "Скейт",
     "price": 24000,
     "img": "https://i.pinimg.com/564x/4c/e2/24/4ce224e2e86c668a3d4c0bb99ace46a4.jpg"
   },
   {
     "id": "12",
-    "title": "shorts",
+    "title": "Шорты со стразами",
     "vendor_code": "44411e",
-    "description": "Описание 1",
+    "description": "Шорты Forever 21",
     "price": 300,
     "img": "https://i.pinimg.com/564x/0f/66/13/0f661301d5b76bca65b4ba1a1f9ea367.jpg"
   }
