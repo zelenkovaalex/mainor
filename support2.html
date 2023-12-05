@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support</title>
+    <style>
+        /* шапка */
+        nav {
+            display: inline-flex;
+            position: sticky;
+            align-items: center;
+        }
+        a, h3 {
+            font-family: helvetica;
+            font-style: unset;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+        .name, h3 {
+            margin-left: 1vw;
+            font-size: 3vw;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .staff {
+            font-size: 1.5vw;
+            margin-left: 63vw;
+        }
+
+        .shop {
+            padding-right: 1vw;
+        }
+        .support {
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        /* form */
+        form {
+            margin-top: 2vw;
+            margin-left: 1vw;
+        }
+        input {
+            font-family: helvetica;
+            font-size: inherit;
+            line-height: inherit;
+            width: 9vw;
+            margin-block-start: 0.5vw;
+            margin-block-end: 0.5vw;
+        }
+        p {
+            font-family: helvetica;
+            font-size: 1vw;
+            color: black;
+            margin-block-start: 0.5vw;
+            margin-block-end: 0.5vw;
+        }
+        input {
+            font-family: helvetica;
+            font-size: inherit;
+            line-height: inherit;
+            width: 9vw;
+            margin-block-start: 0.5vw;
+            margin-block-end: 0.5vw;
+        }
+         #bottom {
+            display: inline-flex;
+            width: 100%;
+            border-top: 2px gray;
+            padding-top: 1vw;
+            align-items: center;
+            margin-top: 5vw;
+        }
+        .hse {
+            background-image: url('./img/hse.png');
+            background-size: cover;
+            width: 15vw;
+            height: 7vw;
+            margin-left: 0.5vw;
+        }
+        .inf {
+            margin-left: auto;
+            text-align: right;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="name">
+            <a href="index.html">stauchik</a>
+        </div>
+        <div class="staff">
+            <a class="shop" href="shop.html">магазин</a>
+            <a class="support" href="support2.html">поддержка</a>
+        </div>
+    </nav>
+
+<form action="https://www.yandex.ru/search" id="UserEnter" method="get" name="UserEnter" target="_blank">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Почта</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+            name="mail">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Оцените насколько вы недовольны</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Что вам не понравилось?</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2" name="info">
+            <option>Вёрстка</option>
+            <option>Контент</option>
+            <option>Вы мне противны</option>
+            <option>Я просто вредный</option>
+            <option>Просто пункт</option>
+        </select>
+    </div>
+    
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Удалось найти то, что искали?</label>
+            <div>
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Да</label>
+            </div>
+            <div>
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Нет</label>
+            </div>
+            <div>
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Идите №;%</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Решить в:</label>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">срочном порядке</label>
+            </div>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">близжайшее время</label>
+            </div>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">близжайший месяц</label>
+            </div>
+        </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Остались вопросы?</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="questions"></textarea>
+        <h4>
+            <input type="Submit" class="submit" name="submit" value="Отправить">
+        </h4>
+    </div>
+</form>
+
+    <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div id="bottom">
+            <div class="hse"></div>
+            <div class="inf">
+                <div class="link">
+                    <a href="https://www.quiksilver.com/">наш лучший партнёр</a>
+                </div>
+                <div class="info" style="margin-block-start: 1vw; margin-block-end: auto;">
+                    <a href="https://www.quiksilver.com/">все права защищены правообладателем</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
