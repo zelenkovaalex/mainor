@@ -1,10 +1,16 @@
 const items = [
-  { name: "Edward", value: 21 },
-  { name: "Sharpe", value: 37 },
-  { name: "And", value: 45 },
-  { name: "The", value: -12 },
-  { name: "Magnetic", value: 13 },
-  { name: "Zeros", value: 37 },
+  { name: "Усы", value: 150 },
+  { name: "Iphone 4", value: 90000 },
+  { name: "Набор сериалов", value: 1000 },
+  { name: "Body mist", value: 1500 },
+  { name: "Резиновые браслеты", value: 500 },
+  { name: "Футболка / майка", value: 1500 },
+  { name: "Космо легинсы", value: 2000 },
+  { name: "Ньян кет", value: 300 },
+  { name: "Растянутый кардиган", value: 1600 },
+  { name: "Кепка", value: 2300 },
+  { name: "Лонгборд", value: 24000 },
+  { name: "Шорты со стразами", value: 300 },
 ];
 
 // sort by value
